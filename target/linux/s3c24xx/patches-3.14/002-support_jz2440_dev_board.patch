@@ -1,0 +1,30 @@
+--- a/arch/arm/mach-s3c24xx/Kconfig	2015-01-09 02:01:03.000000000 +0800
++++ b/arch/arm/mach-s3c24xx/Kconfig	2015-01-23 19:47:14.224891127 +0800
+@@ -109,6 +109,11 @@
+ 	help
+ 	  Common machine code for SMDK2410 and SMDK2440
+ 
++config S3C24XX_JZ2440
++	bool
++	help
++	  Common machine code for JZ2440
++
+ config S3C24XX_SIMTEC_AUDIO
+ 	bool
+ 	depends on (ARCH_BAST || MACH_VR1000 || MACH_OSIRIS || MACH_ANUBIS)
+@@ -600,6 +605,15 @@
+ 	help
+ 	  Say Y here if you are using the SMDK2440.
+ 
++config MACH_JZ2440
++	bool "JZ2440"
++	select S3C2440_XTAL_16934400
++	select S3C24XX_JZ2440
++	select S3C_DEV_NAND
++	select S3C_DEV_USB_HOST
++	help
++	  Say Y here if you are using the JZ2440.
++
+ config SMDK2440_CPU2440
+ 	bool "SMDK2440 with S3C2440 CPU module"
+ 	default y if ARCH_S3C2440

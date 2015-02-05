@@ -1,0 +1,10 @@
+--- a/drivers/net/ethernet/Makefile	2015-01-09 02:01:03.000000000 +0800
++++ b/drivers/net/ethernet/Makefile	2015-01-23 19:51:49.128894777 +0800
+@@ -21,6 +21,7 @@
+ obj-$(CONFIG_NET_VENDOR_CIRRUS) += cirrus/
+ obj-$(CONFIG_NET_VENDOR_CISCO) += cisco/
+ obj-$(CONFIG_DM9000) += davicom/
++obj-$(CONFIG_DM9K) += davicom/
+ obj-$(CONFIG_DNET) += dnet.o
+ obj-$(CONFIG_NET_VENDOR_DEC) += dec/
+ obj-$(CONFIG_NET_VENDOR_DLINK) += dlink/

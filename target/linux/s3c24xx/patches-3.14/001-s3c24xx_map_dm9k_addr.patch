@@ -1,0 +1,12 @@
+--- a/arch/arm/mach-s3c24xx/include/mach/map.h	2015-01-09 02:01:03.000000000 +0800
++++ b/arch/arm/mach-s3c24xx/include/mach/map.h	2015-01-23 20:08:46.696908288 +0800
+@@ -167,6 +167,9 @@
+ #define S3C_PA_SPI0		S3C2443_PA_SPI0
+ #define S3C_PA_SPI1		S3C2443_PA_SPI1
+ 
++#define S3C24XX_DM9K_ADDR_BASE	(S3C2410_CS4)
++#define S3C24XX_DM9K_DATA_BASE	(S3C24XX_DM9K_ADDR_BASE + 4)
++
+ #define SAMSUNG_PA_TIMER	S3C2410_PA_TIMER
+ 
+ #endif /* __ASM_ARCH_MAP_H */

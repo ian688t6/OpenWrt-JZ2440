@@ -1,0 +1,24 @@
+--- a/drivers/net/ethernet/davicom/Kconfig	2015-01-09 02:01:03.000000000 +0800
++++ b/drivers/net/ethernet/davicom/Kconfig	2015-01-23 19:52:26.584895274 +0800
+@@ -13,9 +13,20 @@
+ 	  To compile this driver as a module, choose M here.  The module
+ 	  will be called dm9000.
+ 
++config DM9K
++	tristate "DM9K support"
++	depends on ARM || BLACKFIN || MIPS || COLDFIRE
++	select CRC32
++	select MII
++	---help---
++	  Support for DM9K chipset.
++
++	  To compile this driver as a module, choose M here.  The module
++	  will be called DM9K.
++
+ config DM9000_FORCE_SIMPLE_PHY_POLL
+ 	bool "Force simple NSR based PHY polling"
+-	depends on DM9000
++	depends on DM9K || DM9000
+ 	---help---
+ 	  This configuration forces the DM9000 to use the NSR's LinkStatus
+ 	  bit to determine if the link is up or down instead of the more

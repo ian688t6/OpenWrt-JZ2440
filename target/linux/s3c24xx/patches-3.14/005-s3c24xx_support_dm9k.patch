@@ -1,0 +1,8 @@
+--- a/drivers/net/ethernet/davicom/Makefile	2015-01-09 02:01:03.000000000 +0800
++++ b/drivers/net/ethernet/davicom/Makefile	2015-01-23 19:52:34.900895384 +0800
+@@ -3,3 +3,4 @@
+ #
+ 
+ obj-$(CONFIG_DM9000) += dm9000.o
++obj-$(CONFIG_DM9K) += dm9k.o
+\ No newline at end of file

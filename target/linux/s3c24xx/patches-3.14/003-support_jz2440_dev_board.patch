@@ -1,0 +1,18 @@
+--- a/arch/arm/mach-s3c24xx/Makefile	2015-01-09 02:01:03.000000000 +0800
++++ b/arch/arm/mach-s3c24xx/Makefile	2015-01-23 19:47:36.504891422 +0800
+@@ -84,6 +84,7 @@
+ obj-$(CONFIG_MACH_ANUBIS)		+= mach-anubis.o
+ obj-$(CONFIG_MACH_AT2440EVB)		+= mach-at2440evb.o
+ obj-$(CONFIG_MACH_MINI2440)		+= mach-mini2440.o
++obj-$(CONFIG_MACH_JZ2440)		+= mach-jz2440.o
+ obj-$(CONFIG_MACH_NEXCODER_2440)	+= mach-nexcoder.o
+ obj-$(CONFIG_MACH_OSIRIS)		+= mach-osiris.o
+ obj-$(CONFIG_MACH_RX3715)		+= mach-rx3715.o
+@@ -102,6 +103,7 @@
+ obj-$(CONFIG_S3C24XX_SIMTEC_PM)		+= simtec-pm.o
+ obj-$(CONFIG_S3C24XX_SIMTEC_USB)	+= simtec-usb.o
+ 
++obj-$(CONFIG_S3C24XX_JZ2440)		+= common-jz2440.o
+ # machine additions
+ 
+ obj-$(CONFIG_MACH_BAST_IDE)		+= bast-ide.o
